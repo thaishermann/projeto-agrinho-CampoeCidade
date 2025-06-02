@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'font-family: 'Ancizar Serif;
+    background: #fff3e0;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: linear-gradient(to right, #f44336, #ff9800);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255,255,255,0.5);
+  }
+  
+  /* Bandeirinhas animadas */
+  .bandeirinhas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    background: #fff8e1;
+  }
+  
+  .bandeirinha {
+    width: 25px;
+    height: 35px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    animation: swing 2s ease-in-out infinite;
+  }
+  
+  .bandeirinha:nth-child(odd) {
+    background-color: #ff4081;
+  }
+  .bandeirinha:nth-child(even) {
+    background-color: #00bcd4;
+  }
+  .bandeirinha:nth-child(3n) {
+    background-color: #ffc107;
+  }
+  .bandeirinha:nth-child(4n) {
+    background-color: #4caf50;
+  }
+  .bandeirinha:nth-child(odd) {
+    background-color: #ff4081;
+  }
+  .bandeirinha:nth-child(even) {
+    background-color: #00bcd4;
+  }
+  .bandeirinha:nth-child(3n) {
+    background-color: #ffc107;
+  }
+  .bandeirinha:nth-child(4n) {
+    background-color: #4caf50;
+  }
+
+  @keyframes swing {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+  
+  /* Conteúdo principal */
+  main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .descricao {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .descricao h2 {
+    font-size: 2.2rem;
+    color: #d84315;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Cards de atrações */
+  .atracoes h2 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .card {
+    background: linear-gradient(to bottom right, #fffde7, #ffe0b2);
+    border: 3px dashed #ff9800;
+    border-radius: 15px;
+    width: 500px;
+    height: 100px;
+    box-shadow: 0 4
+  }
+
+ footer {
+    text-align: center;
+  }
