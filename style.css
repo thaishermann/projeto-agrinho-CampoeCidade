@@ -1,22 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Reset e fonte */
+//reset básico (tira margens e paddings padrão)
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;    //fora
+    padding: 0;   //dentro
+    box-sizing: border-box;   largura e altura
   }
   
-  body {
+  body {     //fonte do corpo, cor de fundo bege e cor do texto.
     font-family: 'font-family: 'Ancizar Serif;
-    background: #fff3e0;
-    color: #333;
+    background: #fff3e0;  //fundo
+    color: #333;   //cor do texto
   }
   
-  /* Cabeçalho */
+  //cabeçalho colorido com gradiente, texto centralizado e sombra.
   header {
-    background: linear-gradient(to right, #f44336, #ff9800);
+    background: linear-gradient(to right, #f44336, #ff9800);  //
     color: white;
     padding: 30px 20px;
     text-align: center;
